@@ -1,0 +1,10 @@
+﻿table
+{
+    border-collapse: collapse;
+    margin:auto;
+}
+
+th, td
+{
+    text-align: center;
+}

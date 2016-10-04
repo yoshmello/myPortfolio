@@ -1,0 +1,62 @@
+<!--<!DOCTYPE html>-->
+<html>
+<head>
+    <title>TicTacToe</title>
+    <script language="javascript" type="text/javascript" src="jquery-2.2.2.min.js" ></script>
+    <script type='text/javascript' src='TicTacToe.js'></script>
+	<!--<meta charset="utf-8" />-->
+    <style type="text/css">
+        body {
+          margin-top: 80px;
+        }
+        #btn1,
+        #btn2,
+        #btn3,
+        #btn4,
+        #btn5,
+        #btn6,
+        #btn7,
+        #btn8,
+        #btn9 {
+            height: 100px;
+            width: 100px;
+            background-color: #f1f1f1;
+            font-family: verdana;
+            font-size: 1.5cm;
+            color: black;
+        }
+        table {
+          margin:auto;
+        }
+        #textBox {
+          text-align: center;
+          font-family: verdana;
+        }
+        input[type="text"]{
+          font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+      <tr>
+        <td><input id="btn1" type="button" value="" onclick='btnxy_Click(1);' /></td>
+        <td><input id="btn2" type="button" value="" onclick='btnxy_Click(2);' /></td>
+        <td><input id="btn3" type="button" value="" onclick='btnxy_Click(3);' /></td>
+     </tr>
+     <tr>
+        <td><input id="btn4" type="button" value="" onclick='btnxy_Click(4);' /></td>
+        <td><input id="btn5" type="button" value="" onclick='btnxy_Click(5);' /></td>
+        <td><input id="btn6" type="button" value="" onclick='btnxy_Click(6);' /></td>
+     </tr>
+     <tr>
+        <td><input id="btn7" type="button" value="" onclick='btnxy_Click(7);' /></td>
+        <td><input id="btn8" type="button" value="" onclick='btnxy_Click(8);' /></td>
+        <td><input id="btn9" type="button" value="" onclick='btnxy_Click(9);' /></td>
+     </tr>
+   </table>
+     <div id=textBox>
+        <input id="textWin" type="text" disabled="disabled" style="width:310px" style="height:25px" style="font-size:44px"/>
+    </div>
+</body>
+</html>
