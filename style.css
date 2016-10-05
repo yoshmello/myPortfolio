@@ -512,6 +512,12 @@ td {
   padding: 12px 0;
   font-size: 1.3rem;
 }
+a:link {
+  color: white;
+}
+a:hover {
+  color: red;
+  }
 
 
 /* --------------------------------
