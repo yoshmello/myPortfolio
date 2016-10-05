@@ -278,11 +278,16 @@ td {
 }
 
 .overlay {
-  position: absolute;
+ /* position: absolute;
   top: 1520px;
   bottom: -1920px;
   left: 0;
-  right: 0;
+  right: 0; */
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   transition: opacity 200ms;
   visibility: hidden;
@@ -341,11 +346,17 @@ td {
 }
 
 .overlay_en {
-  position: absolute;
+  /*position: absolute;
   top: 1190px;
   bottom: -1690px;
   left: 0;
-  right: 0;
+  right: 0;*/
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
   background: rgba(0, 0, 0, 0.5);
   transition: opacity 200ms;
   visibility: hidden;
@@ -406,12 +417,15 @@ td {
 
 
 .popup {
-  margin: 150px auto;
+  /*margin: 150px auto;*/
+  margin: auto;
   padding: 20px;
   background: #fff;
   border: 1px solid #666;
-  width: 800px;
-  height: 650px;
+  /*width: 800px;*/
+  width: 80%;
+  /*height: 650px;*/
+  height: 100%;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   position: relative;
   overflow-y: scroll;
