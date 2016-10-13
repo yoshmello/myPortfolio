@@ -1,26 +1,34 @@
 <?php
-$field_name = $_POST['name'];
-$field_email = $_POST['email'];
-$field_message = $_POST['message'];
-$mail_to = 'yoshmello@gmail.com';
-$subject = 'Message from a site visitor '.$field_name;
-$body_message = 'From: '.$field_name."\n";
-$body_message .= 'E-mail: '.$field_email."\n";
-$body_message .= 'Message: '.$field_message;
-$headers = 'From: '.$field_email."\r\n";
-$headers .= 'Reply-To: '.$field_email."\r\n";
-$mail_status = mail($mail_to, $subject, $body_message, $headers);
-if ($mail_status) { ?>
-    <script language="javascript" type="text/javascript">
-        window.location = 'index.html';
-    </script>
-<?php
-}
-else { ?>
-    <script language="javascript" type="text/javascript">
-        alert('メッセージ送信に失敗しました。こちらのメールアドレスへお問い合わせください。test@gmail.com（※自分のメールアドレス）');
-        window.location = 'index.html';
-    </script>
-<?php
-}
+	if *isset($_POST["submit"])) {
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['message']
+		$from = 'Demo Contact Form';
+		$to = 'yoshitakameg@mail.usf.edu';
+		$subject = 'Message from Contact Form';
+
+		$body = 'From: $name\n Email: $email\n Message:\n $message';
+
+		if (!$_POST['name']) {
+			$errName = 'Please enter your name';
+		}
+
+		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+			$errEmail = 'Please enter a valid email address';
+		}
+
+		if (!$_POST['message']) {
+			$errMessage = 'Please enter your message';
+		}
+
+		if (!$errName && !$errEmail && !$errMessage) {
+			if (mail ($to, $subject, $bosy, $from)) {
+				$result='<div class="alert alert-success">Thank you! I will be in touch.</div>';
+			}
+			else {
+				$result='<div class="alert alert-danger">Sorry there was an error sending your messsage. Please try again later</div>';
+			}
+		}
+	}
 ?>
+

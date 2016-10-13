@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
@@ -53,31 +53,35 @@
 
   <div class="works-wrapper">
     <div class="work-box vending_machine">
-      <img class="work-image" src="VM_screenshots/VM12.jpg" alt="制作事例1">
+     <img class="work-image" src="VM_screenshots/VM12.jpg" alt="project1">
       <div class="work-description">
         <div class="work-description-inner">
           <p class="work-text">
             Vending Machine<br>
             Dev Environment：Vim, Visual Studio, C++<br>
-            <label for="p1" class="button button-ghost">READ MORE</label>
+	    <!--<label for="p1" class="button button-ghost">READ MORE</label>-->
+	    <button class="button button-ghost" style="cursor:pointer" 
+		    onclick="openWork()">READ MORE</button>
           </p>
         </div>
       </div>
     </div>
     <div class="work-box tic_tac_toe_cpp">
-      <img class="work-image" src="OX_screenshots/TicTacToe10.png" alt="制作事例2">
+     <img class="work-image" src="OX_screenshots/TicTacToe10.png" alt="project2">
       <div class="work-description">
         <div class="work-description-inner">
           <p class="work-text">
             C++ Tic Tac Toe Game<br>
             Dev Environment：Vim, Visual Studio, C++<br>
-            <label for="p2" class="button button-ghost">READ MORE</label>
+	    <!--<label for="p2" class="button button-ghost">READ MORE</label>-->
+	    <label class="button button-ghost" style="cursor:pointer" 
+					onclick="openWork()">READ MORE</label>
           </p>
         </div>
       </div>
     </div>
     <div class="work-box tic_tac_toe_js">
-      <img class="work-image" src="tic_tac_toe_js.png" alt="制作事例3">
+     <img class="work-image" src="tic_tac_toe_js.png" alt="project3">
       <div class="work-description">
         <div class="work-description-inner">
           <p class="work-text">
@@ -89,13 +93,15 @@
       </div>
     </div>
     <div class="work-box temperature_conversion">
-      <img class="work-image" src="temperature_conversion.jpg" alt="制作事例4">
+     <img class="work-image" src="temperature_conversion.jpg" alt="project4">
       <div class="work-description">
         <div class="work-description-inner">
           <p class="work-text">
             Temperature Conversion<br>
             Dev Environment：Visual Studio, ASP.NET, HTML, C#<br>
-            <label for="p4" class="button button-ghost">READ MORE</label>
+	    <!--<label for="p4" class="button button-ghost">READ MORE</label>-->
+	    <label class="button button-ghost" style="cursor:pointer" 
+					onclick="openWork()">READ MORE</label>
           </p>
         </div>
       </div>
@@ -103,7 +109,7 @@
   </div>
   <div class="works-wrapper">
     <div class="work-box chomp_game">
-      <img class="work-image" src="chomp_game.jpg" alt="制作事例5">
+     <img class="work-image" src="chomp_game.jpg" alt="project5">
       <div class="work-description">
         <div class="work-description-inner">
           <p class="work-text">
@@ -115,7 +121,7 @@
       </div>
     </div>
     <div class="work-box address_lookup">
-      <img class="work-image" src="address_lookup.jpg" alt="制作事例6">
+     <img class="work-image" src="address_lookup.jpg" alt="project6">
       <div class="work-description">
         <div class="work-description-inner">
           <p class="work-text">
@@ -127,7 +133,7 @@
       </div>
     </div>
     <div class="work-box entity_framework">
-      <img class="work-image" src="entity_framework.jpg" alt="制作事例7">
+     <img class="work-image" src="entity_framework.jpg" alt="project7">
       <div class="work-description">
         <div class="work-description-inner">
           <p class="work-text">
@@ -139,7 +145,7 @@
       </div>
     </div>
     <div class="work-box jumping_jim">
-      <img class="work-image" src="JJ_screenshots/JumpingJim.png" alt="制作事例8">
+     <img class="work-image" src="JJ_screenshots/JumpingJim.png" alt="project8">
       <div class="work-description">
         <div class="work-description-inner">
           <p class="work-text">
@@ -152,9 +158,11 @@
     </div>
   </div>
 
-  <div id="popup1" class="overlay_en light">
-    <label for="p1" class="cancel"></label>
-    <div class="popup">
+  <!--<div id="popup1" class="overlay_en light">-->
+  <div id="workWindow" class="overlay_work">
+    <!--<label for="p1" class="cancel"></label>
+    <div class="popup">-->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeWork()">&times;</a>
       <h2>Vending Machine Operation</h2>
       <div class="content">
         <p>Dev Environment: Visual Studio, C++</p>
@@ -193,9 +201,11 @@
     </div>
   </div>
 
-  <div id="popup2" class="overlay_en light">
-    <label for="p2" class="cancel"></label>
-    <div class="popup">
+  <!--<div id="popup2" class="overlay_en light">-->
+  <div id="workWindow" class="overlay_work">
+    <!--<label for="p2" class="cancel"></label>
+    <div class="popup">-->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeWork()">&times;</a>
       <h2>Tic Tac Toe - Simple AI</h2>
       <div class="content">
         <p>Dev Environment: Vim, C++</p>
@@ -226,9 +236,11 @@
     </div>
   </div>
 
-  <div id="popup3" class="overlay_en light">
-    <label for="p3" class="cancel"></label>
-    <div class="popup">
+  <!--<div id="popup3" class="overlay_en light">-->
+  <div id="workWindow" class="overlay_work">
+	  <!--<label for="p3" class="cancel"></label>-->
+     <!--<div class="popup">-->
+     <a href="javascript:void(0)" class="closebtn" onclick="closeWork()">&times;</a>
       <h2>JS Tic Tac Toe</h2>
       <div class="content">
         <p>Dev Environment: Atom, HTML, CSS, Javascript(jQuery)</p>
@@ -237,7 +249,8 @@
     </div>
   </div>
 
-  <div id="popup4" class="overlay_en light">
+  <!--<div id="popup4" class="overlay_en light">-->
+  <div id="workWindow" class="overlay_work">
     <label for="p4" class="cancel"></label>
     <div class="popup">
       <h2>Temperature Conversion</h2>
@@ -248,7 +261,8 @@
     </div>
   </div>
 
-  <div id="popup5" class="overlay_en light">
+  <!--<div id="popup5" class="overlay_en light">-->
+  <div id="workWindow" class="overlay_work">
     <label for="p5" class="cancel"></label>
     <div class="popup">
       <h2>Chomp Game</h2>
@@ -263,7 +277,8 @@
     </div>
   </div>
 
-  <div id="popup6" class="overlay_en light">
+  <!--<div id="popup6" class="overlay_en light">-->
+  <div id="workWindow" class="overlay_work">
     <label for="p6" class="cancel"></label>
     <div class="popup">
       <h2>Address Lookup</h2>
@@ -274,7 +289,8 @@
     </div>
   </div>
 
-  <div id="popup7" class="overlay_en light">
+  <!--<div id="popup7" class="overlay_en light">-->
+  <div id="workWindow" class="overlay_work">
     <label for="p7" class="cancel"></label>
     <div class="popup">
       <h2>Entity Framework</h2>
@@ -285,7 +301,8 @@
     </div>
   </div>
 
-  <div id="popup8" class="overlay_en light">
+  <!--<div id="popup8" class="overlay_en light">-->
+  <div id="workWindow" class="overlay_work">
     <label for="p8" class="cancel"></label>
     <div class="popup">
       <h2>Jumping Jim</h2>
@@ -357,13 +374,78 @@
       <input type="submit" value="SEND">
       <p> I'm so sorry, but this contact form doesn't work,</p>
       <p> so please email this address.<p>
-      <a href="mailto:yoshitakameg@mail.usf.edu?Subject=To YOSHI">yositakameg@mail.usf.edu</a></p>
+      <a class="email" href="mailto:yoshitakameg@mail.usf.edu?Subject=To YOSHI">yositakameg@mail.usf.edu</a></p>
       <p> Somebody please teach me PHP :(</p>
     </form>
   </section>
 
+<!--
+<?php
+if (isset($_POST["submit"])) {
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$message = $_POST['message'];
+	$from = 'Demo Contact Form'; 
+	$to = 'yoshitakmeg'; 
+	$subject = 'Message from Contact Demo ';
+
+	$body ="From: $name\n E-Mail: $email\n Message:\n $message";
+
+	// Check if name has been entered
+	if (!$_POST['name']) {
+	$errName = 'Please enter your name';
+	}
+
+	// Check if email has been entered and is valid
+	if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+	$errEmail = 'Please enter a valid email address';
+	}
+
+	//Check if message has been entered
+	if (!$_POST['message']) {
+	$errMessage = 'Please enter your message';
+	}
+
+if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+	if (mail ($to, $subject, $body, $from)) {
+	$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+		} 
+	else {
+	$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
+		}
+	}
+}
+?>
+-->
+
+<!--<section class="contact" id="contact">
+<h2 class="heading">CONTACT</h2>
+<form class="contact-form" action="contact.php">
+<input type="text" name="name" placeholder="NAME"i
+value ="<?php echo htmlspecialchars($_POST['name']); ?>">
+<?php echo "<p class='tent-danger'>$errName</p>";?>
+
+<input type="text" name="email" placeholder="EMAIL"
+value ="<?php echo htmlspecialchars($_POST['email']); ?>">
+<?php echo "<p class='tent-danger'>$errEmail</p>";?>
+>
+<textarea name="message" placeholder="MESSAGE">
+<?php echo htmlspecialchars($_POST['message']); ?></textarea>
+<?php echo "<p class='tent-danger'>$errMessage</p>";?>
+<input type="submit" value="SEND">
+<?php echo $result; ?>
+
+      <p> I'm so sorry, but this contact form doesn't work,</p>
+      <p> so please email this address.<p>
+      <a class="email" href="mailto:yoshitakameg@mail.usf.edu?Subject=To YOSHI">yositakameg@mail.usf.edu</a></p>
+      <p> Somebody please teach me PHP :(</p>
+    </form>
+  </section>
+  ?>-->
+
+
   <footer class="footer">
-      &copy; <a href="https://github.com/yoshmello/myPortfolio/tree/gh-pages" target="_blank">yoshmello</a>
+      &copy; <a class="copyright" href="https://github.com/yoshmello/myPortfolio/tree/gh-pages" target="_blank">yoshmello</a>
   </footer>
 
   <!--GOOGLE ANALYSTICS-->
@@ -377,5 +459,26 @@
     ga('send', 'pageview');
   </script>
 
-</body>
+ <!--JAVASCRIPT-->
+ <script>
+	function openWork() {
+		document.getElementById("workWindow").style.width = "100%";
+		document.body.style.overflow = "hidden";
+		var header = document.querySelector('.closebtn');
+		var origOffsetY = header.offsetTop;
+		function onScroll(e) {
+			window.scrollY >= origOffsetY ? header.classList. add('sticky'):
+							header.classList.remove('sticky');
+		}
+		document.addEventListener('scroll', onScroll);
+		
+	}
+	function closeWork() {
+		document.getElementById("workWindow").style.width = "0%";
+		document.body.style.overflow = "visible";
+		document.getElementById("CLOSE").style.visibility = "hidden";
+	}
+ </script>
+
+ </body>
 </html>

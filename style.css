@@ -198,8 +198,8 @@ td {
   height: 50%;
   background: no-repeat;
   background-size: 100% 100%;
-  opacity: 0.2;
-  transform: scaleY(-1);
+  opacity: 0.3;
+  /*transform: scaleY(-1);*/
 }
 .work-box.vending_machine::after {
   background-image: url('VM_screenshots/VM12.jpg');
@@ -225,13 +225,13 @@ td {
 .work-box.jumping_jim::after {
   background-image: url('JJ_screenshots/JumpingJim.png');
 }
-.work-box:nth-child(odd) .work-image {
+/*.work-box:nth-child(odd) .work-image {
   margin: 60% 0 0;
 }
 .work-box:nth-child(odd) .work-description,
 .work-box:nth-child(odd)::after {
   top: 0;
-}
+}*/
 
 
 
@@ -285,6 +285,39 @@ td {
 .hide {
   display: none;
 }
+
+.overlay_work {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(232,248,245);
+  background-color: rgba(0,0,0,0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  }
+
+.overlay_work .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay_work a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay_work a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
 .overlay {
  /* position: absolute;
   top: 1520px;
@@ -512,12 +545,12 @@ td {
   padding: 12px 0;
   font-size: 1.3rem;
 }
-a:link {
+a.copyright:link, a.email:link {
   color: white;
 }
-a:hover {
+a.copyright:hover, a.email:hover {
   color: red;
-  }
+}
 
 
 /* --------------------------------
