@@ -12,7 +12,7 @@
 <body>
   <br>
   <br>
-    <a href="index.html" style="text-decoration:none; float:right; color:white; margin-right:60px; margin-botton:100px">ENGLISH</a>
+    <a href="index.html" style="text-decoration:none; float:right; color:white; margin-right:60px">ENGLISH</a>
   <header class="header">
     <p class="site-title-sub">フロリダ在住大学生のポートフォリオ</p>
     <h1 class="site-title">こんにちは、YOSHIです。</h1>
@@ -91,7 +91,9 @@
             <p class="work-text">
               Vending Machine<br>
               開発環境：Vim, Visual Studio, C++<br>
-              <label for="p1" class="button button-ghost">READ MORE</label>
+	      <!--<label for="p1" class="button button-ghost">READ MORE</label>-->
+	      <label class="button button-ghost" style="sursor:pointer"
+		      onclick="openWork()">READ MORE</label>
             </p>
           </div>
         </div>
@@ -103,7 +105,9 @@
             <p class="work-text">
               C++ Tic Tac Toe Game<br>
               開発環境：Vim, Visual Studio, C++<br>
-              <label for="p2" class="button button-ghost">READ MORE</label>
+	      <!--<label for="p2" class="button button-ghost">READ MORE</label>-->
+	      <label class="button button-ghost" style="sursor:pointer"
+		      onclick="openWork()">READ MORE</label>
             </p>
           </div>
         </div>
@@ -115,7 +119,7 @@
             <p class="work-text">
               Javascript Tic Tac Toe<br>
               開発環境：Atom, HTML, CSS, Javascript(jQuery)<br>
-              <a href="TicTacToe/tic_tac_toe.html" target="_blank" class="button button-ghost">PLAY</label>
+              <a href="TicTacToe/tic_tac_toe.html" target="_blank" class="button button-ghost">PLAY</a>
             </p>
           </div>
         </div>
@@ -127,7 +131,9 @@
             <p class="work-text">
               Project 4<br>
               開発環境：Visual Studio, ASP.NET, HTML, C#<br>
-              <label for="p4" class="button button-ghost">READ MORE</label>
+	      <!--<label for="p4" class="button button-ghost">READ MORE</label>-->
+	      <label class="button button-ghost" style="sursor:pointer"
+		      onclick="openWork()">READ MORE</label>
             </p>
           </div>
         </div>
@@ -141,7 +147,9 @@
             <p class="work-text">
               Project 5<br>
               開発環境：Visual Studio, ASP.NET, C#<br>
-              <label for="p5" class="button button-ghost">READ MORE</label>
+	      <!--<label for="p5" class="button button-ghost">READ MORE</label>-->
+	      <label class="button button-ghost" style="sursor:pointer"
+		      onclick="openWork()">READ MORE</label>
             </p>
           </div>
         </div>
@@ -153,7 +161,9 @@
             <p class="work-text">
               Project 6<br>
               開発環境：Visual Studio, ASP.NET, C#<br>
-              <label for="p6" class="button button-ghost">READ MORE</label>
+	      <!--<label for="p6" class="button button-ghost">READ MORE</label>-->
+	      <label class="button button-ghost" style="sursor:pointer"
+		      onclick="openWork()">READ MORE</label>
             </p>
           </div>
         </div>
@@ -165,7 +175,9 @@
             <p class="work-text">
               Project 7<br>
               開発環境：Visual Studio, ASP.NET, C#<br>
-              <label for="p7" class="button button-ghost">READ MORE</label>
+	      <!--<label for="p7" class="button button-ghost">READ MORE</label>-->
+	      <label class="button button-ghost" style="sursor:pointer"
+		      onclick="openWork()">READ MORE</label>
             </p>
           </div>
         </div>
@@ -177,16 +189,20 @@
             <p class="work-text">
               Project 8<br>
               開発環境：Visual Studio, ASP.NET, C#<br>
-              <label for="p8" class="button button-ghost">READ MORE</label>
+	      <!--<label for="p8" class="button button-ghost">READ MORE</label>-->
+	      <label class="button button-ghost" style="sursor:pointer"
+		      onclick="openWork()">READ MORE</label>
             </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="popup1" class="overlay light">
-      <label for="p1" class="cancel"></label>
-      <div class="popup">
+    <!--<div id="popup1" class="overlay light">-->
+    <div id="workWindow" class="overlay_work">
+      <!--<label for="p1" class="cancel"></label>
+      <div class="popup">-->i
+      <a href="javascript:void(0)" class="closebtn" onclick="closeWork()">&times;</a>
         <h2>Vending Machine Operation</h2>
         <div class="content">
           <p>開発環境: Visual Studio, C++</p>
@@ -228,9 +244,11 @@
       </div>
     </div>
 
-    <div id="popup2" class="overlay light">
-      <label for="p2" class="cancel"></label>
-      <div class="popup">
+    <!--<div id="popup2" class="overlay light">-->
+    <div id="workWindow" class="overlay_work">
+      <!--<label for="p2" class="cancel"></label>
+      <div class="popup">-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeWork()">&times;</a>
         <h2>Tic Tac Toe - Simple AI</h2>
         <div class="content">
           <p>開発環境: Vim, C++<dr>
@@ -261,9 +279,11 @@
       </div>
     </div>
 
-    <div id="popup3" class="overlay light">
-      <label for="p3" class="cancel"></label>
-      <div class="popup">
+    <!--<div id="popup3" class="overlay light">-->
+    <div id="workWindow" class="overlay_work">
+      <!--<label for="p3" class="cancel"></label>
+      <div class="popup">-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeWork()">&times;</a>
         <h2>JS Tic Tac Toe</h2>
         <div class="content">
           <p>開発環境: Atom, HTML, CSS, Javascript(jQuery)</p>
@@ -273,9 +293,11 @@
       </div>
     </div>
 
-    <div id="popup4" class="overlay light">
-      <label for="p4" class="cancel"></label>
-      <div class="popup">
+    <!--<div id="popup4" class="overlay light">-->
+    <div id="workWindow" class="overlay_work">
+      <!--<label for="p4" class="cancel"></label>
+      <div class="popup">-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeWork()">&times;</a>
         <h2>What the what?</h2>
         <div class="content">
           <p>温度変換のウェブアプリを作成しました。<br>
@@ -287,9 +309,11 @@
       </div>
     </div>
 
-    <div id="popup5" class="overlay light">
-      <label for="p5" class="cancel"></label>
-      <div class="popup">
+    <!--<div id="popup5" class="overlay light">-->
+    <div id="workWindow" class="overlay_work">
+      <!--<label for="p5" class="cancel"></label>
+      <div class="popup">-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeWork()">&times;</a>
         <h2>Chomp Game</h2>
         <div class="content">
           <p>Chomp Gameという簡単なゲームを作成しました。<br>
@@ -301,9 +325,11 @@
       </div>
     </div>
 
-    <div id="popup6" class="overlay light">
-      <label for="p6" class="cancel"></label>
-      <div class="popup">
+    <!--<div id="popup6" class="overlay light">-->
+    <div id="workWindow" class="overlay_work">
+      <!--<label for="p6" class="cancel"></label>
+      <div class="popup">-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeWork()">&times;</a>
         <h2>What the what?</h2>
         <div class="content">
           <p>Click outside the popup to close.<br>
@@ -312,9 +338,11 @@
       </div>
     </div>
 
-    <div id="popup7" class="overlay light">
-      <label for="p7" class="cancel"></label>
-      <div class="popup">
+    <!--<div id="popup7" class="overlay light">-->
+    <div id="workWindow" class="overlay_work">
+      <!--<label for="p7" class="cancel"></label>
+      <div class="popup">-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeWork()">&times;</a>
         <h2>What the what?</h2>
         <div class="content">
           <p>Click outside the popup to close.<br>
@@ -323,9 +351,11 @@
       </div>
     </div>
 
-    <div id="popup8" class="overlay light">
-      <label for="p8" class="cancel"></label>
-      <div class="popup">
+    <!--<div id="popup8" class="overlay light">-->
+    <div id="workWindow" class="overlay_work">
+      <!--<label for="p8" class="cancel"></label>
+      <div class="popup">-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeWork()">&times;</a>
         <h2>What the what?</h2>
         <div class="content">
           <p>Click outside the popup to close.<br>
@@ -411,6 +441,28 @@
     ga('create', 'UA-85305612-1', 'auto');
     ga('send', 'pageview');
   </script>
+
+ <!--JAVASCRIPT-->
+ <script>
+	function openWork() {
+		document.getElementById("workWindow").style.width = "100%";
+		document.body.style.overflow = "hidden";
+		var header = document.querySelector('.closebtn');
+		var origOffsetY = header.offsetTop;
+		function onScroll(e) {
+			window.scrollY >= origOffsetY ? header.classList. add('sticky'):
+							header.classList.remove('sticky');
+		}
+		document.addEventListener('scroll', onScroll);
+		
+	}
+	function closeWork() {
+		document.getElementById("workWindow").style.width = "0%";
+		document.body.style.overflow = "visible";
+		document.getElementById("CLOSE").style.visibility = "hidden";
+	}
+ </script>
+ 
 
 </body>
 </html>
